@@ -27,8 +27,10 @@
 }
 
 #intro #content img {
-  width: 20rem;
+  animation-duration: 3s;
+  animation-fill-mode: both;
 }
+
 
 #intro #content h1 {
   color: white;
@@ -46,17 +48,29 @@
   #intro #content h1 {
     font-size: 2.2rem;
   }
+
+  #intro #content img {
+    width: 15rem;
+  }
 }
 
 @media (min-width: 992px) {
   #intro-video video {
     width: unset;
   }
+
+  #intro #content img {
+    width: 20rem;
+  }
 }
 
 @media (min-width: 1200px) {
   #intro-video video {
     width: 100vw;
+  }
+
+  #intro #content img {
+    width: 23rem;
   }
 }
 

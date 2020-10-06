@@ -1,4 +1,5 @@
 const getText = document.querySelector('.intro-text h1#getAnimate'),
+    getImg = document.querySelector('.intro-text img'),
     nav = document.querySelector('header.navbar');
 
 
@@ -26,7 +27,9 @@ animate(getText.dataset.first, true);
 setTimeout(() => {
     animate(getText.dataset.sec, true)
     setTimeout(() => {
-        animate(getText.dataset.end, false)
+        getText.classList.add('d-none')
+        getImg.classList.remove('d-none')
+        getImg.style.animationName = "intro-show";
         setTimeout(() => {
             nav.classList.remove('d-none')
         }, 1500)
